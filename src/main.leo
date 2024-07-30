@@ -1,6 +1,7 @@
 program helloworld_s6xnodz.aleo {
     // The 'helloworld' main function.
     transition main(public a: u32, b: u32) -> u32 {
-        return a + b;
+        assert_eq(1u32, 1u32);
+        return a + b + a;
     }
 }
